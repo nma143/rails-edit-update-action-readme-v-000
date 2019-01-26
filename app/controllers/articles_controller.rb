@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
     # raise params.inspect
     @article = Article.find(params[:id])
     @article.update(title: params[:title], description: params[:description])
+    @article.save
     redirect_to article_path(@article)
   end
 end
