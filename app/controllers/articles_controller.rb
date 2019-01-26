@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    raise params.inspect
+    #raise params.inspect
     @article = Article.find(params[:id])
     #@article.update(title: params[:article][:title], description: params[:article][:description])
     #puts @article
